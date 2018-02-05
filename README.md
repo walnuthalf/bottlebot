@@ -1,6 +1,19 @@
 # Bottlebot
 
-**TODO: Add description**
+Start the supervisor with 
+
+```elixir
+{:ok, pid} = Bottlebot.start_link
+```
+
+It will automatically log into the matrix server specified in the Conf module (lib/conf.ex).
+At the moment, bottlebot has to be "attached" or "detached" to rooms manually. If it is attached/joined, it will poll all messages. 
+
+
+Extend Bottlebot by adding more to the Handler module in lib/handler.ex
+
+
+Happy hacking!
 
 ## Installation
 
